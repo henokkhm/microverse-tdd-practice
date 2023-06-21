@@ -1,0 +1,24 @@
+{
+  "name": "tdd-practice",
+  "version": "1.0.0",
+  "description": "This is an exercise for Module 2 - Week 3 of the Full-Stack Developer program offered by Microverse.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henokkhm/microverse-tdd-practice.git"
+  },
+  "keywords": [
+    "test-driven-development",
+    "tdd",
+    "microverse"
+  ],
+  "author": "Henok Kirubel Hailemariam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/henokkhm/microverse-tdd-practice/issues"
+  },
+  "homepage": "https://github.com/henokkhm/microverse-tdd-practice#readme"
+}
