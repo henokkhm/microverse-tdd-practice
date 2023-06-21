@@ -17,6 +17,10 @@ const calculator = {
   subtract: (a, b) => a - b,
   multiply: (a, b) => a * b,
   divide: (a, b) => a / b,
-}
+};
 
-module.exports = { stringLength, reverseString, calculator };
+const capitalize = (str) => {
+  return '';
+};
+
+module.exports = { stringLength, reverseString, calculator, capitalize };
