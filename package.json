@@ -4,7 +4,7 @@
   "description": "This is an exercise for Module 2 - Week 3 of the Full-Stack Developer program offered by Microverse.",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/henokkhm/microverse-tdd-practice/issues"
   },
-  "homepage": "https://github.com/henokkhm/microverse-tdd-practice#readme"
+  "homepage": "https://github.com/henokkhm/microverse-tdd-practice#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
 }
