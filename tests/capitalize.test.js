@@ -8,4 +8,12 @@ describe('capitalize', () => {
 
     expect(capitalized).toEqual('');
   });
+
+  it('returns capitalized letter for a string of length 1', () => {
+    const str = 'a';
+
+    const capitalized = capitalize(str);
+
+    expect(capitalized).toEqual('A');
+  });
 });
