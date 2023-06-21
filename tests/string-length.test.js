@@ -1,15 +1,17 @@
 const { stringLength } = require('../index.js');
 
 describe('stringLength function', () => {
-  test('returns the correct length for an empty string', () => {
+  test('throws error for an empty string', () => {
     // Arrange
     const emptyString = '';
 
     // Act
-    const length = stringLength(emptyString);
-
     // Assert
-    expect(length).toEqual(0);
+    expect(() => {
+      stringLength(emptyString);
+    }).toThrow(
+      /^String must be between one and ten characters long, inclusive.$/,
+    );
   });
 
   test('returns the correct length for a string of length one', () => {
@@ -23,7 +25,7 @@ describe('stringLength function', () => {
     expect(length).toEqual(1);
   });
 
-   test('returns the correct length for a string of length five', () => {
+  test('returns the correct length for a string of length five', () => {
     // Arrange
     const string = 'abcde';
 
@@ -34,14 +36,16 @@ describe('stringLength function', () => {
     expect(length).toEqual(5);
   });
 
-   test('returns the correct length for a string of length eleven', () => {
+  test('throws error for a string of length eleven', () => {
     // Arrange
     const string = 'abcdefghijk';
 
     // Act
-    const length = stringLength(string);
-
     // Assert
-    expect(length).toEqual(11);
+    expect(() => {
+      stringLength(string);
+    }).toThrow(
+      /^String must be between one and ten characters long, inclusive.$/,
+    );
   });
 });
