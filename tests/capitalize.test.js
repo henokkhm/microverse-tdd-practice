@@ -16,4 +16,12 @@ describe('capitalize', () => {
 
     expect(capitalized).toEqual('A');
   });
+
+  it('returns capitalized word for a string of length 2', () => {
+    const str = 'ab';
+
+    const capitalized = capitalize(str);
+
+    expect(capitalized).toEqual('Ab');
+  });
 });
