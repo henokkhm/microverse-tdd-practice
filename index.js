@@ -20,7 +20,7 @@ const calculator = {
 };
 
 const capitalize = (str) => {
-  return '';
+  return str.toUpperCase();
 };
 
 module.exports = { stringLength, reverseString, calculator, capitalize };
